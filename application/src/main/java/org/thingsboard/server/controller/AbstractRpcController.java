@@ -99,7 +99,7 @@ public abstract class AbstractRpcController extends BaseController {
 
                 @Override
                 public void onFailure(Throwable e) {
-                    ResponseEntity entity;
+                    ResponseEntity<String> entity;
                     if (e instanceof ToErrorResponseEntity) {
                         entity = ((ToErrorResponseEntity) e).toErrorResponseEntity();
                     } else {

@@ -595,5 +595,8 @@ public class UserController extends BaseController {
             throw new ThingsboardException("Settings with type: " + strType + " are reserved for internal use!", ThingsboardErrorCode.BAD_REQUEST_PARAMS);
         }
     }
+    public void addedNewMethod(){
+        System.out.println("This method does nothing");
+    }
 
 }
